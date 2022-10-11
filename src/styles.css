@@ -1,0 +1,382 @@
+html body {
+    background-color: rgb(0, 100, 164);
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+/* Styles for nav bar  */
+.navbar.navbar-expand-lg {
+    background-color: rgb(0, 100, 164);
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.navbar.navbar-expand-lg .navbar-brand {
+    color:rgb(255, 210, 0);
+    font-size: 2em;
+    padding-left: 0.5em;
+}
+
+.navbar.navbar-expand-lg a{
+    color: white;
+}
+
+.navbar.navbar-expand-lg a:hover{
+    color:rgb(255, 210, 0);
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.navbar-light .navbar-toggler {
+    border: 1px solid white;
+}
+
+.navbar-light .navbar-toggler.collapsed {
+    border: 1px solid rgb(215, 215, 215);
+}
+
+.navbar-light .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-nav .nav-link.active {
+    color:rgb(255, 210, 0) !important;
+}
+
+.fa.fa-envelope {
+    color:rgb(255, 210, 0);
+    font-size: 1em;
+}
+
+.fa.fa-linkedin-square {
+    color:rgb(255, 210, 0);
+    font-size: 1em;
+}
+
+.fa.fa-github {
+    color:rgb(255, 210, 0);
+    font-size: 1em;
+}
+
+@media screen and (max-width: 400px) {
+    /* x-small screens */
+    /* Home Page */
+    .section-greeting {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #my-portrait {
+        width: 90%;
+        border-radius: 100%;
+        height: auto; 
+    }
+
+    .article-greeting {
+        padding-top: 1.75em;
+    }
+    
+    .article-greeting h3 {
+        font-size: 12vw;
+    }
+    
+    .article-greeting p {
+        font-size: 5vw;
+    }
+
+    .section-intro p {
+       font-size: calc(12px + 0.390625vw); 
+    }
+
+    /* About Section */
+    .section-about {
+        display: flex;
+        flex-direction: column;
+        padding: 1.4em;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #my-picture-about {
+        width: 80%;
+        height: auto;
+    }
+    .about-container {
+        padding: 1em;
+    }
+    .about-container h3 {
+        font-size: 8.5vw;
+    }
+    .about-container p {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 640px) {
+    /* small screens */
+    /* Home Page */
+    .section-greeting {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        align-items: center;
+        text-align: center;
+    }
+    
+    #my-portrait {
+        width: 80%;
+        border-radius: 100%;
+        height: auto; 
+    }
+
+    .article-greeting {
+        padding-top: 2em;
+    }
+    
+    .article-greeting h3{
+        font-size: 9vw;
+    }
+    
+    .article-greeting p {
+        font-size: 3.5vw;
+    }
+    .section-intro p {
+        font-size: calc(14px + 0.390625vw);
+    }
+
+    /* About Section */
+    .section-about {
+        display: flex;
+        flex-direction: column;
+        padding: 1.4em;
+        align-items: center;
+        text-align: center;
+    }
+    #my-picture-about {
+        width: 300px;
+        height: 100%;
+        max-height: 30%;
+    }
+    .about-container {
+        padding: 1em;
+    }
+    .about-container h3 {
+        font-size: 6.5vw;
+    }
+    .about-container p {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width:1024px) {
+    /* medium screens */
+    /* Home Page */
+    .section-greeting {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        align-items: center;
+        text-align: center;
+    }
+
+    #my-portrait {
+        width: 300px;
+        border-radius: 100%;
+        height: auto; 
+    }
+    .article-greeting {
+        padding-top: 2em;
+    }
+
+    .article-greeting h3{
+        font-size: 7vw;
+    }
+
+    .article-greeting p {
+        font-size: 2.75vw;
+    }
+
+    .section-intro p {
+        font-size: calc(16px + 0.390625vw);
+    }
+
+    /* About Section */
+    .section-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #my-picture-about {
+        width: auto;
+        height: 500px;
+        padding-left: 2em;
+    }
+    .about-container {
+        padding: 1em;
+    }
+    .about-container h3 {
+        font-size: 4.5vw;
+    }
+    .about-container p {
+        font-size: 2vw;
+    }
+
+}
+@media screen and (min-width: 1024px) {
+    /* large screens */
+    /* Home Page */
+    .section-greeting {
+        display: flex;
+        flex-direction: row;
+        padding: 2em;
+    }
+
+    #my-portrait {
+        width: 100%;
+        max-width: 28%;
+        border-radius: 100%;
+        height: auto;
+    }
+
+    .article-greeting {
+        padding-left: 2em;
+        padding-top: 5em;
+    }
+
+    .article-greeting h3{
+        font-size: 4.5rem;
+    }
+
+    .article-greeting p {
+        font-size: 1.5rem;
+    }
+
+    .section-intro p {
+        font-size: calc(16px + 0.390625vw);
+    }
+
+    /* About Section */
+    .section-about {
+        display: flex;
+        flex-direction: row;
+        padding: 2em;
+    }
+    #my-picture-about {
+        width: 100%;
+        max-width: 40%;
+        height: auto;
+    }
+    .about-container {
+        padding-left: 2em;
+    }
+    .about-container h3 {
+        font-size: 3.5vw;
+    }
+    .about-container p {
+        font-size: 1.25vw;
+    }
+}
+
+/* Card Width Styles */
+.card.mx-auto.h-100.work {
+    max-width: 100%;
+}
+
+.card.mx-auto.h-100.project {
+    max-width: 20em;
+    align-items: center;
+}
+
+/* Styles for intro section */
+.section-intro {
+    height: 20em;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+.article-greeting h3 {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+}
+
+.article-greeting p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color:rgb(255, 210, 0); 
+}
+
+.section-intro p {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0, 100, 164);
+    text-align: center;
+    padding: .5em;
+}
+
+/* Styles for about section */
+.about-container h3 {
+    font-family: 'Noto Sans JP', sans-serif;
+    color:rgb(255, 210, 0);
+}
+
+.about-container p {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 100;
+}
+
+/* Styles for work section */
+.container.text-center h4 {
+    color:rgb(255, 210, 0);
+    padding: 1rem;
+    font-size: 1.75rem;
+}
+
+/* Styles for contact section */
+.section-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+#contact-email {
+    color: rgb(255, 210, 0);
+}
+
+.section-contact h3{
+    color: rgb(255, 210, 0);
+}
+
+.section-contact p {
+    color: white;
+}
+
+/* Styles for footer section */
+.footer-section {
+    background-color: white;
+    text-align: center;
+    margin-top: 3em;
+    max-height: 30%;
+}
+
+.footer-section h4 {
+    padding-top: 0.5em;
+    color: rgb(0, 100, 164);
+}
+
+.footer-section h5 {
+    color: rgb(0, 100, 164)
+}
+
+.footer-section i {
+    padding-bottom: 1em;
+}

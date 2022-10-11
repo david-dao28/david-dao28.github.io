@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+WRITTEN BY: David Dao
+EMAIL: davidvd@uci.edu
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="David Dao">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="David Dao's Portfolio - Learn more about my experience as a Computer Science student.">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Source: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-linkedin-square -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Source: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-github -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="../styles.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <title>David Dao</title>
+</head>
+<body>
+  <!-- Header - title and nav -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">David Dao</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ms-auto mb-2 mb-lgi-0">
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://drive.google.com/file/d/1SJEfAhPsYcngBfsVyHjaEKHQYTRusd0X/view?usp=sharing">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class = "nav-link" href="https://www.linkedin.com/in/david-v-dao/" title="linkedin icon">
+              <span class="fa fa-linkedin-square"></span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class = "nav-link" href = "https://github.com/david-dao28" title="github icon">
+              <span class="fa fa-github"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Greeting -->
+  <div class = "section-greeting">
+    <img  src="/images/david-dao.jpeg" alt="David Dao" id = "my-portrait">
+    <article class = "article-greeting">
+      <h3>Hi, my name is David.</h3>
+      <p>
+        I am a Junior at the University of California, Irvine studying <br> Computer Science  
+        with a specialization in Information.
+      </p>
+    </article>
+  </div>
+  <div class = "section-intro">
+    <p>
+      Through my education and projects, I've taken a strong interest in front-end development and, more specifically, creating mobile applications. Using the
+      the React Native framework, I'm driven to make a user's experience enjoyable and fulfilling regardless of their mobile device's platform. Currently, I am working
+      part-time as a temp on-call for the Johns Hopkins Applied Physics Laboratory, where I contribute to a front-end project aimed at identifying and countering weapons of mass 
+      destruction.
+    </p>
+  </div>
+
+  <!-- Work Section -->
+  <!-- Bootstrap grid cards: https://getbootstrap.com/docs/5.2/components/card/#grid-cards -->
+  <section class = "container text-center">
+    <h4>Work Experience</h4>
+    <div class="row row-cols-1 row-cols-md-2 g-5">
+      <div class = "col">
+        <div class="card mx-auto h-100 work">
+            <div class="card-body">
+              <h5 class="card-title">The Johns Hopkins Applied Physics Lab</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Software Engineer Intern <br> June 2022 - September 2022</h6>
+              <ul class="card-text">
+                <li>Independently designed and implemented unit tests with Junit to exercise the functionality of our API endpoints.</li>
+                <li>Improved the performance of reindexing by 50% through applying optimization strategies for Elasticsearch.</li>
+                <li>Developed and delivered features to a web application for key stakeholders using Angular and HTML/CSS on a tight schedule.</li>
+              </ul>
+              <div class="row row-cols-auto gx-1 gy-2 justify-content-center">
+                <div class="col">
+                  <span class="badge rounded-pill text-bg-primary" style="font-size: 1rem;">Java</span>
+                </div>
+                <div class="col">
+                  <span class="badge rounded-pill text-bg-primary" style="font-size: 1rem;">Angular</span>
+                </div>
+                <div class="col">
+                  <span class="badge rounded-pill text-bg-primary" style="font-size: 1rem;">Typescript</span>
+                </div>
+                <div class="col">
+                  <span class="badge rounded-pill text-bg-primary" style="font-size: 1rem;">HTML/CSS</span>
+                </div>
+              </div>
+            </div> 
+        </div>
+      </div>
+      <div class = "col">
+        <div class="card mx-auto h-100 work">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">The Johns Hopkins Applied Physics Lab</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Temp On-Call <br> September 2022 - Present</h6>
+              <ul class="card-text h-100">
+                <li>Resolving discrepancies in expected behavior for features on our web application.</li>
+              </ul>
+              <div class="row row-cols-auto gx-1 gy-2 justify-content-center">
+                <div class="col">
+                  <span class="badge rounded-pill text-bg-primary" style="font-size: 1rem;">SPARQL</span>
+                </div>
+              </div>
+            </div> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <div class = "footer-section">
+    <footer>
+      <h4>David Dao</h4>
+      <h5>davidvd@uci.edu</h5>
+      <a href="mailto:davidvd@uci.edu" title="email icon"><span class="fa fa-envelope"></span></a>
+      <a href="https://www.linkedin.com/in/david-v-dao/" title="linkedin icon"><span class="fa fa-linkedin-square"></span></a>
+      <a href = "https://github.com/david-dao28" title="github icon"><span class="fa fa-github"></span></a>
+    </footer>
+  </div>
+  <!-- <p>
+    <a href="http://validator.w3.org/check?uri=referer">
+       W3C validator
+    </a>
+  </p> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

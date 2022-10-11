@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+WRITTEN BY: David Dao
+EMAIL: davidvd@uci.edu
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="David Dao">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="David Dao's Portfolio - Learn more about my experience as a Computer Science student.">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Source: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-linkedin-square -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Source: https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-github -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="../styles.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <title>David Dao</title>
+</head>
+  <!-- Bootstrap Navbar: https://getbootstrap.com/docs/5.2/components/navbar/#nav -->
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">David Dao</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-2 mb-lgi-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./projects.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./contact.php">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://drive.google.com/file/d/1SJEfAhPsYcngBfsVyHjaEKHQYTRusd0X/view?usp=sharing">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class = "nav-link" href="https://www.linkedin.com/in/david-v-dao/" title="linkedin icon">
+                <span class="fa fa-linkedin-square"></span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class = "nav-link" href = "https://github.com/david-dao28" title="github icon">
+                <span class="fa fa-github"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class = "section-contact text-start">
+      <header>
+        <h3>Contact Me</h3>
+      </header>
+      <p>Have any questions or inquiries? Feel free to reach out!</p>
+
+      <!-- Contact Form -->
+      <!-- Bootstrap Floating Labels: https://getbootstrap.com/docs/5.2/forms/floating-labels/ -->
+      <form id="contact-form" name="contact-form" action="mail.php" onsubmit="reset();" method="POST">
+        <span class="badge text-bg-danger" id="status" style="margin-bottom: 1em"></span>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="name" placeholder="Your Name">
+          <label class = "name-label" for="name">Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="email" placeholder="Your Email">
+          <label class = "email-label" for="email">Email</label>
+        </div>
+        <div class="form-floating mb-3">
+          <textarea class="form-control" placeholder="Leave a message here" id="message" style="min-height: 100px"></textarea>
+          <label class = "message-label" for="message">Message</label>
+        </div>
+        <button type="button" class="btn btn-warning" style="max-width: 10%; min-width: 80px;" onclick="validateForm();">Submit</button>
+      </form>
+    </section>
+    
+    <!-- Footer Section -->
+    <div class = "footer-section">
+      <footer>
+        <h4>David Dao</h4>
+        <h5>davidvd@uci.edu</h5>
+        <a href="mailto:davidvd@uci.edu" title="email icon"><span class="fa fa-envelope"></span></a>
+        <a href="https://www.linkedin.com/in/david-v-dao/" title="linkedin icon"><span class="fa fa-linkedin-square"></span></a>
+        <a href = "https://github.com/david-dao28" title="github icon"><span class="fa fa-github"></span></a>
+      </footer>
+    </div>
+  <script src="../form.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
