@@ -273,6 +273,7 @@ html body {
     #my-picture-about {
         width: 100%;
         max-width: 40%;
+        max-height: 45em;
         height: auto;
     }
     .about-container {
@@ -340,6 +341,9 @@ html body {
     padding: 1rem;
     font-size: 1.75rem;
 }
+.container.text-center {
+    margin-bottom: 2em;
+}
 
 /* Styles for contact section */
 .section-contact {
@@ -364,8 +368,8 @@ html body {
 .footer-section {
     background-color: white;
     text-align: center;
-    margin-top: 3em;
-    max-height: 30%;
+    max-height: 35%;
+    margin-top: auto;
 }
 
 .footer-section h4 {
